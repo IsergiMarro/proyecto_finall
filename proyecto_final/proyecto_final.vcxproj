@@ -148,12 +148,14 @@
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="proyecto_final.cpp" />
     <ClCompile Include="Ventas.cpp" />
+    <ClCompile Include="VENTAS2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="ConexionBD.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Ventas.h" />
+    <ClInclude Include="VENTAS2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
