@@ -4,7 +4,6 @@
 #include "ConexionBD.h"
 #include "Persona.h"
 #include <string>
-#include<iostream>
 using namespace std;
 class Cliente : Persona
 {
@@ -13,7 +12,7 @@ private: string nit;
 public:
 	Cliente() {
 	}
-	Cliente(string nom, string ape, string gen, int tel, string ce, string fi, string n) : Persona(nom, ape, gen, tel, ce, fi) {
+	Cliente(string nom, string ape, string gen, string tel, string ce, string fi, string n) : Persona(nom, ape, gen, tel, ce, fi) {
 		nit = n;
 	}
 
@@ -22,7 +21,7 @@ public:
 	void setNombres(string nom) { nombres = nom; }
 	void setApellidos(string ape) { apellidos = ape; }
 	void setGenero(string gen) { genero = gen; }
-	void setTelefono(int tel) { telefono = tel; }
+	void setTelefono(string tel) { telefono = tel; }
 	void setCorreo_Electronico(string ce) { correo_electronico = ce; }
 	void setFecha_Ingreso(string fi) { fechaingreso = fi; }
 	void setNit(string n) { nit = n; }
@@ -30,7 +29,7 @@ public:
 	string getNombres() { return nombres; }
 	string getApellidos() { return apellidos; }
 	string getGenero() { return genero; }
-	int getTelefono() { return telefono; }
+	string getTelefono() { return telefono; }
 	string getCorreo_Electronico() { return correo_electronico; }
 	string getFecha_Ingreso() { fechaingreso; }
 	string getNit() { return nit; }
@@ -41,9 +40,8 @@ public:
 		int q_estado;
 		ConexionBD cn = ConexionBD();
 		cn.abrir_conexion();
-		string t = to_string(telefono);
 		if (cn.getConectar()) {
-			string  insertar = "INSERT INTO clientes(nombres,apellidos,nit,genero,telefono,correo_electronico,fechaingreso) VALUES ('" + nombres + "','" + apellidos + "','" + nit + "','" + genero + "'," + t + ",'" + correo_electronico + "','" + fechaingreso + "')";
+			string  insertar = "INSERT INTO clientes(nombres,apellidos,nit,genero,telefono,correo_electronico,fechaingreso) VALUES ('" + nombres + "','" + apellidos + "','" + nit + "','" + genero + "'," + telefono + ",'" + correo_electronico + "','" + fechaingreso + "')";
 			const char* i = insertar.c_str();
 			// executar el query
 			q_estado = mysql_query(cn.getConectar(), i);

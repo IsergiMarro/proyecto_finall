@@ -144,18 +144,50 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="Compras.cpp" />
+    <ClCompile Include="Compras2.cpp" />
+    <ClCompile Include="Compras_detalle.cpp" />
+    <ClCompile Include="Compras_detalle2.cpp" />
     <ClCompile Include="ConexionBD.cpp" />
+    <ClCompile Include="Empleado.cpp" />
+    <ClCompile Include="Empleado2.cpp" />
+    <ClCompile Include="Marcas.cpp" />
+    <ClCompile Include="Marcas2.cpp" />
     <ClCompile Include="Persona.cpp" />
+    <ClCompile Include="Productos.cpp" />
+    <ClCompile Include="Productos2.cpp" />
+    <ClCompile Include="Proveedores.cpp" />
+    <ClCompile Include="Proveedores2.cpp" />
     <ClCompile Include="proyecto_final.cpp" />
+    <ClCompile Include="Puesto.cpp" />
+    <ClCompile Include="Puestos2.cpp" />
     <ClCompile Include="Ventas.cpp" />
     <ClCompile Include="VENTAS2.cpp" />
+    <ClCompile Include="Ventas_Detalle.cpp" />
+    <ClCompile Include="Ventas_Detalle2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cliente.h" />
+    <ClInclude Include="Compras.h" />
+    <ClInclude Include="Compras2.h" />
+    <ClInclude Include="Compras_detalle.h" />
+    <ClInclude Include="Compras_detalle2.h" />
     <ClInclude Include="ConexionBD.h" />
+    <ClInclude Include="Empleado.h" />
+    <ClInclude Include="Empleado2.h" />
+    <ClInclude Include="Marcas.h" />
+    <ClInclude Include="Marcas2.h" />
     <ClInclude Include="Persona.h" />
+    <ClInclude Include="Productos.h" />
+    <ClInclude Include="Productos2.h" />
+    <ClInclude Include="Proveedores.h" />
+    <ClInclude Include="Proveedores2.h" />
+    <ClInclude Include="Puesto.h" />
+    <ClInclude Include="Puestos2.h" />
     <ClInclude Include="Ventas.h" />
     <ClInclude Include="VENTAS2.h" />
+    <ClInclude Include="Ventas_Detalle.h" />
+    <ClInclude Include="Ventas_Detalle2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

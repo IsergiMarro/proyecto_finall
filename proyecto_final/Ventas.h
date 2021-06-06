@@ -4,18 +4,17 @@ using namespace std;
 class Ventas
 {
 	// atributos
-protected: string nofactura, serie, fechafactura, fechaIngreso;
-		 int telefono = 0;
+protected: string nofactura, serie, fechafactura, id_cliente, fechaIngreso;
 		 // costructor
 protected:
 	Ventas() {
 	}
-	Ventas(string nf, string se, string ff, string fg) {
+	Ventas(string nf, string se, string ff, string idc, string FI) {
 		nofactura = nf;
 		serie = se;
 		fechafactura = ff;
-		fechaIngreso = fg;
-		
+		id_cliente = idc;
+		fechaIngreso = FI;
 	}
 };
 
