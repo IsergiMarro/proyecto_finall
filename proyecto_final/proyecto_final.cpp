@@ -112,6 +112,7 @@ int main()
 				z.crear();
 				z.leer();
 				system("pause");
+				break;
 			    case 4:
 				cout << "ingrese Nombre del empledado:";
 				cin >> nombres;
@@ -137,6 +138,7 @@ int main()
 				e.crear();
 				e.leer();
 				system("pause");
+				break;
 			    case 5:
 				cout << "ingrese Marcas:";
 				cin >> MARCAS;
@@ -166,6 +168,7 @@ int main()
 				h.crear();
 				h.leer();
 				system("pause");
+				break;
 			    case 7:
 				cout << "ingrese el NO.orden:";
 				cin >> NO_ORDEN_CO;
@@ -191,6 +194,7 @@ int main()
 				j.crear();
 				j.leer();
 				system("pause");
+				break;
 			    case 8:
 				string PROVEdor, NiT, DIRECCION, TELEfono;
 				cout << "ingrese el provedor:";
@@ -205,6 +209,7 @@ int main()
 				d.crear();
 				d.leer();
 				system("pause");
+				break;
 			}
 		} while (repetir);
 		return 0;
