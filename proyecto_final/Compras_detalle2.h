@@ -51,10 +51,10 @@ public:
 
 		if (cn.getConectar()) {
 
-			cout << "------------ Datos de compras detalle ------------" << endl;
+			cout << "------------ Datos de Datos de Maestro detalle de compras------------" << endl;
 			string consulta = "select * from compras_detalle";
-			const char* c = consulta.c_str();
-			q_estado = mysql_query(cn.getConectar(), c);
+			const char* j = consulta.c_str();
+			q_estado = mysql_query(cn.getConectar(), j);
 			if (!q_estado) {
 				resultado = mysql_store_result(cn.getConectar());
 				while (fila = mysql_fetch_row(resultado)) {

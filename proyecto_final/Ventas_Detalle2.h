@@ -28,9 +28,9 @@ public:
 		cn.abrir_conexion();
 		if (cn.getConectar()) {
 			string  insertar = "INSERT INTO ventas_detalle(id_venta,id_producto,cantidad,precio_unitario ) VALUES ('" + id_venta + "','" + id_producto + "','" + cantidad + "','" + precio_unitario + "')";
-			const char* w = insertar.c_str();
+			const char* W = insertar.c_str();
 			// executar el query
-			q_estado = mysql_query(cn.getConectar(), w);
+			q_estado = mysql_query(cn.getConectar(), W);
 			if (!q_estado) {
 				cout << "Ingreso Exitoso ..." << endl;
 			}
@@ -52,10 +52,10 @@ public:
 
 		if (cn.getConectar()) {
 
-			cout << "------------ Datos de Clientes ------------" << endl;
+			cout << "------------ Datos de Maestro detalle de ventas ------------" << endl;
 			string consulta = "select * from ventas_detalle";
-			const char* w = consulta.c_str();
-			q_estado = mysql_query(cn.getConectar(), w);
+			const char* W = consulta.c_str();
+			q_estado = mysql_query(cn.getConectar(), W);
 			if (!q_estado) {
 				resultado = mysql_store_result(cn.getConectar());
 				while (fila = mysql_fetch_row(resultado)) {

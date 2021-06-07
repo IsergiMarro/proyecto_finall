@@ -57,7 +57,7 @@ public:
 
 	if (cn.getConectar()) {
 
-		cout << "------------ Datos de ventas ------------" << endl;
+		cout << "------------ Datos de Maestro detalle de ventas ------------" << endl;
 		string consulta = "select * from ventas";
 		const char* b = consulta.c_str();
 		q_estado = mysql_query(cn.getConectar(),b );
